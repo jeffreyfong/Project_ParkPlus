@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="jeff_fong.parkplus.MainMenu">
+
+    <ImageView
+        android:id="@+id/ivLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="220dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/logo" />
+
+    <Button
+        android:id="@+id/btNearByCarPark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Find Nearby Car Parks"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/btnStoreMyCar"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/btNearByCarPark"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="16dp"
+        android:text="Park My Car" />
+
+    <Button
+        android:id="@+id/btnFindMyCar"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnStoreMyCar"
+        android:layout_alignBottom="@+id/btnStoreMyCar"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="22dp"
+        android:text="Find My Car" />
+
+    <Button
+        android:id="@+id/btnPromotions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Promotions"
+        android:layout_below="@+id/btnStoreMyCar"
+        android:layout_marginTop="18dp"
+        android:layout_alignEnd="@+id/btNearByCarPark"
+        android:layout_alignStart="@+id/btNearByCarPark" />
+
+    <Button
+        android:id="@+id/btnContact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/btnPromotions"
+        android:layout_alignStart="@+id/btnPromotions"
+        android:layout_below="@+id/btnPromotions"
+        android:layout_marginTop="16dp"
+        android:text="Contact Us" />
+
+
+</RelativeLayout>
